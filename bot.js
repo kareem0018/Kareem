@@ -27,5 +27,11 @@ client.on('ready', () => {
   console.log('')
     
 });
+client.on('ready', () => {
+	console.log('Hello, im ready');
+	
+	client.user.setGame('Discord', 'https://twitch.tv/kareem');
+});
+
 
 client.login(process.env.BOT_TOKEN);
